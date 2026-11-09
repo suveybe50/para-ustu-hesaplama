@@ -21,8 +21,12 @@ int main() {
     // Para ustunu kurusa cevirme
     paraUstu = (int)((odenenPara - urunTutari) * 100 + 0.5);
 
-    printf("\nPara ustu: %.2f TL\n", paraUstu / 100.0);
+    printf("\nPara ustu: %.2f TL\n", paraUstu / 100.0);       
 
+
+    // Rapor:yuvarlama yapmadan donusum
+    int yuvarlamasiz = (int)((odenenPara - urunTutari) * 100);
+    printf("Yuvarlamasiz kurus: %d\n", yuvarlamasiz);
     printf("\nVerilecek kupurler:\n");
 
     for(i = 0; i < 12; i++) {
